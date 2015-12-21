@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		5101C3341C23DA9500EC7710 /* TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldDelegate.swift; sourceTree = "<group>"; };
 		5101C3371C266A6F00EC7710 /* MeMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeMe.swift; sourceTree = "<group>"; };
-		518014DD1C23AAB800A98820 /* TestLayoutBeta1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestLayoutBeta1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		518014DD1C23AAB800A98820 /* MemeMev1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeMev1.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		518014E01C23AAB800A98820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		518014E21C23AAB800A98820 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		518014E51C23AAB800A98820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		518014D41C23AAB800A98820 = {
 			isa = PBXGroup;
 			children = (
-				518014DF1C23AAB800A98820 /* TestLayoutBeta1 */,
+				518014DF1C23AAB800A98820 /* MemeMev1.0 */,
 				518014DE1C23AAB800A98820 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,12 +66,12 @@
 		518014DE1C23AAB800A98820 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				518014DD1C23AAB800A98820 /* TestLayoutBeta1.app */,
+				518014DD1C23AAB800A98820 /* MemeMev1.0.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		518014DF1C23AAB800A98820 /* TestLayoutBeta1 */ = {
+		518014DF1C23AAB800A98820 /* MemeMev1.0 */ = {
 			isa = PBXGroup;
 			children = (
 				5101C3361C266A3900EC7710 /* Class */,
@@ -83,15 +83,15 @@
 				518014E91C23AAB800A98820 /* LaunchScreen.storyboard */,
 				518014EC1C23AAB800A98820 /* Info.plist */,
 			);
-			path = TestLayoutBeta1;
+			path = MemeMev1.0;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		518014DC1C23AAB800A98820 /* TestLayoutBeta1 */ = {
+		518014DC1C23AAB800A98820 /* MemeMev1.0 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 518014EF1C23AAB800A98820 /* Build configuration list for PBXNativeTarget "TestLayoutBeta1" */;
+			buildConfigurationList = 518014EF1C23AAB800A98820 /* Build configuration list for PBXNativeTarget "MemeMev1.0" */;
 			buildPhases = (
 				518014D91C23AAB800A98820 /* Sources */,
 				518014DA1C23AAB800A98820 /* Frameworks */,
@@ -101,9 +101,9 @@
 			);
 			dependencies = (
 			);
-			name = TestLayoutBeta1;
+			name = MemeMev1.0;
 			productName = TestLayoutBeta1;
-			productReference = 518014DD1C23AAB800A98820 /* TestLayoutBeta1.app */;
+			productReference = 518014DD1C23AAB800A98820 /* MemeMev1.0.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -121,7 +121,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 518014D81C23AAB800A98820 /* Build configuration list for PBXProject "TestLayoutBeta1" */;
+			buildConfigurationList = 518014D81C23AAB800A98820 /* Build configuration list for PBXProject "MemeMev1.0" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -134,7 +134,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				518014DC1C23AAB800A98820 /* TestLayoutBeta1 */,
+				518014DC1C23AAB800A98820 /* MemeMev1.0 */,
 			);
 		};
 /* End PBXProject section */
@@ -271,10 +271,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TestLayoutBeta1/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MemeMev1.0/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Ronald.TestLayoutBeta1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = Ronald.MemeMe;
+				PRODUCT_NAME = MemeMev1.0;
 			};
 			name = Debug;
 		};
@@ -282,17 +282,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = TestLayoutBeta1/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MemeMev1.0/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Ronald.TestLayoutBeta1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = Ronald.MemeMe;
+				PRODUCT_NAME = MemeMev1.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		518014D81C23AAB800A98820 /* Build configuration list for PBXProject "TestLayoutBeta1" */ = {
+		518014D81C23AAB800A98820 /* Build configuration list for PBXProject "MemeMev1.0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				518014ED1C23AAB800A98820 /* Debug */,
@@ -301,7 +301,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		518014EF1C23AAB800A98820 /* Build configuration list for PBXNativeTarget "TestLayoutBeta1" */ = {
+		518014EF1C23AAB800A98820 /* Build configuration list for PBXNativeTarget "MemeMev1.0" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				518014F01C23AAB800A98820 /* Debug */,

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "518014DC1C23AAB800A98820"
-               BuildableName = "TestLayoutBeta1.app"
-               BlueprintName = "TestLayoutBeta1"
-               ReferencedContainer = "container:TestLayoutBeta1.xcodeproj">
+               BuildableName = "MemeMev1.0.app"
+               BlueprintName = "MemeMev1.0"
+               ReferencedContainer = "container:MemeMev1.0.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "518014DC1C23AAB800A98820"
-            BuildableName = "TestLayoutBeta1.app"
-            BlueprintName = "TestLayoutBeta1"
-            ReferencedContainer = "container:TestLayoutBeta1.xcodeproj">
+            BuildableName = "MemeMev1.0.app"
+            BlueprintName = "MemeMev1.0"
+            ReferencedContainer = "container:MemeMev1.0.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "518014DC1C23AAB800A98820"
-            BuildableName = "TestLayoutBeta1.app"
-            BlueprintName = "TestLayoutBeta1"
-            ReferencedContainer = "container:TestLayoutBeta1.xcodeproj">
+            BuildableName = "MemeMev1.0.app"
+            BlueprintName = "MemeMev1.0"
+            ReferencedContainer = "container:MemeMev1.0.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "518014DC1C23AAB800A98820"
-            BuildableName = "TestLayoutBeta1.app"
-            BlueprintName = "TestLayoutBeta1"
-            ReferencedContainer = "container:TestLayoutBeta1.xcodeproj">
+            BuildableName = "MemeMev1.0.app"
+            BlueprintName = "MemeMev1.0"
+            ReferencedContainer = "container:MemeMev1.0.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
