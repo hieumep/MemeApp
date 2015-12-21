@@ -17,11 +17,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlv-Sh-OKN">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Fdz-Vj-LWe"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem id="X7a-PI-UBB">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="1JG-Ml-qkV">
+                                            <connections>
+                                                <action selector="shareActivity:" destination="BYZ-38-t0r" id="BWB-is-AmW"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="5q9-g4-F13">
+                                            <connections>
+                                                <action selector="Cancel" destination="BYZ-38-t0r" id="dbD-R4-w2b"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w55-77-uGP">
+                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TOP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dUI-Yw-1Ba">
+                                <rect key="frame" x="0.0" y="94" width="600" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BOTTOM" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bhz-ln-6Qt">
+                                <rect key="frame" x="0.0" y="491" width="600" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                            </textField>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NhV-J5-WUG">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="YvA-fN-Zy2"/>
-                                </constraints>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="azp-c9-Dbb"/>
                                     <barButtonItem systemItem="camera" id="7kN-P9-z5D">
@@ -38,42 +68,13 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Sho-Gl-WXj"/>
                                 </items>
                             </toolbar>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TOP" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dUI-Yw-1Ba">
-                                <rect key="frame" x="0.0" y="94" width="600" height="30"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="BOTTOM" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bhz-ln-6Qt">
-                                <rect key="frame" x="0.0" y="491" width="600" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
-                            </textField>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hlv-Sh-OKN">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="Fdz-Vj-LWe"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem id="X7a-PI-UBB">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="action" id="1JG-Ml-qkV"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Cancel" id="5q9-g4-F13"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="w55-77-uGP">
-                                <rect key="frame" x="0.0" y="64" width="600" height="492"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NhV-J5-WUG" firstAttribute="top" secondItem="w55-77-uGP" secondAttribute="bottom" id="7e5-K8-9ya"/>
+                            <constraint firstItem="NhV-J5-WUG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7eU-Hg-qaI"/>
                             <constraint firstAttribute="trailing" secondItem="hlv-Sh-OKN" secondAttribute="trailing" id="7vF-rc-4Xb"/>
                             <constraint firstAttribute="trailing" secondItem="dUI-Yw-1Ba" secondAttribute="trailing" id="Abx-HO-Nri"/>
                             <constraint firstItem="dUI-Yw-1Ba" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="CDb-K4-oWW"/>
-                            <constraint firstAttribute="trailing" secondItem="NhV-J5-WUG" secondAttribute="trailing" id="CTi-tY-kKE">
-                                <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
-                            </constraint>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NhV-J5-WUG" secondAttribute="bottom" id="DfV-7S-y76"/>
                             <constraint firstItem="w55-77-uGP" firstAttribute="trailing" secondItem="dUI-Yw-1Ba" secondAttribute="trailing" id="Dho-s1-3eS">
                                 <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
                             </constraint>
@@ -81,15 +82,15 @@
                             <constraint firstItem="w55-77-uGP" firstAttribute="leading" secondItem="bhz-ln-6Qt" secondAttribute="leading" id="HzZ-nP-5ld">
                                 <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
                             </constraint>
+                            <constraint firstItem="w55-77-uGP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="44" id="L7z-Qm-2Yc"/>
                             <constraint firstItem="hlv-Sh-OKN" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="NAM-Tm-elA"/>
                             <constraint firstItem="hlv-Sh-OKN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QL1-S7-zAD"/>
+                            <constraint firstAttribute="bottom" secondItem="w55-77-uGP" secondAttribute="bottom" constant="44" id="SUi-ow-AOd"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bhz-ln-6Qt" secondAttribute="bottom" constant="79" id="VaB-B5-2hj"/>
                             <constraint firstItem="bhz-ln-6Qt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Xea-Zy-hnp"/>
+                            <constraint firstAttribute="trailing" secondItem="NhV-J5-WUG" secondAttribute="trailing" id="Y0n-mG-gEP"/>
                             <constraint firstAttribute="trailing" secondItem="bhz-ln-6Qt" secondAttribute="trailing" id="bgH-hg-hpH"/>
-                            <constraint firstItem="w55-77-uGP" firstAttribute="top" secondItem="hlv-Sh-OKN" secondAttribute="bottom" id="e97-GI-kS7"/>
-                            <constraint firstItem="NhV-J5-WUG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="rW5-KO-JpL">
-                                <variation key="heightClass=compact-widthClass=compact" constant="0.0"/>
-                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="NhV-J5-WUG" secondAttribute="bottom" id="rgm-ug-73U"/>
                         </constraints>
                     </view>
                     <connections>
@@ -97,6 +98,8 @@
                         <outlet property="bottomTextField" destination="bhz-ln-6Qt" id="yjl-Jz-RAb"/>
                         <outlet property="cameraButton" destination="7kN-P9-z5D" id="CiI-Vo-plA"/>
                         <outlet property="imageView" destination="w55-77-uGP" id="ttW-fL-9vR"/>
+                        <outlet property="navigationBar" destination="hlv-Sh-OKN" id="9u1-4Y-h75"/>
+                        <outlet property="toolBar" destination="NhV-J5-WUG" id="wJg-fm-uvz"/>
                         <outlet property="topTextField" destination="dUI-Yw-1Ba" id="f0c-Pa-VIy"/>
                     </connections>
                 </viewController>

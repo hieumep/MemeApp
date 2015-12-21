@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5101C3351C23DA9500EC7710 /* TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5101C3341C23DA9500EC7710 /* TextFieldDelegate.swift */; };
+		5101C3381C266A6F00EC7710 /* MeMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5101C3371C266A6F00EC7710 /* MeMe.swift */; };
 		518014E11C23AAB800A98820 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518014E01C23AAB800A98820 /* AppDelegate.swift */; };
 		518014E31C23AAB800A98820 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518014E21C23AAB800A98820 /* ViewController.swift */; };
 		518014E61C23AAB800A98820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518014E41C23AAB800A98820 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		5101C3341C23DA9500EC7710 /* TextFieldDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldDelegate.swift; sourceTree = "<group>"; };
+		5101C3371C266A6F00EC7710 /* MeMe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeMe.swift; sourceTree = "<group>"; };
 		518014DD1C23AAB800A98820 /* TestLayoutBeta1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestLayoutBeta1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		518014E01C23AAB800A98820 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		518014E21C23AAB800A98820 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +47,14 @@
 			name = "Control Delegate";
 			sourceTree = "<group>";
 		};
+		5101C3361C266A3900EC7710 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				5101C3371C266A6F00EC7710 /* MeMe.swift */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
 		518014D41C23AAB800A98820 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +74,7 @@
 		518014DF1C23AAB800A98820 /* TestLayoutBeta1 */ = {
 			isa = PBXGroup;
 			children = (
+				5101C3361C266A3900EC7710 /* Class */,
 				5101C3311C23D79000EC7710 /* Control Delegate */,
 				518014E01C23AAB800A98820 /* AppDelegate.swift */,
 				518014E21C23AAB800A98820 /* ViewController.swift */,
@@ -146,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5101C3381C266A6F00EC7710 /* MeMe.swift in Sources */,
 				518014E31C23AAB800A98820 /* ViewController.swift in Sources */,
 				518014E11C23AAB800A98820 /* AppDelegate.swift in Sources */,
 				5101C3351C23DA9500EC7710 /* TextFieldDelegate.swift in Sources */,
