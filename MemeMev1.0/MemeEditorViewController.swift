@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MemeEditorViewController.swift
 //  TestLayoutBeta1
 //
 //  Created by Hieu Vo on 12/17/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
  
     @IBOutlet weak var cameraButton: UIBarButtonItem!
@@ -102,13 +102,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
         imageView.contentMode = .ScaleAspectFit
         imageView.image = image
-        self.dismissViewControllerAnimated(true, completion: nil)
+        dismissViewControllerAnimated(true, completion: nil)
         
     }
     
     //func for cancel to pick photo
     func imagePickerControllerDidCancel(picker: UIImagePickerController) {
-        self.dismissViewControllerAnimated(false, completion: nil)
+        dismissViewControllerAnimated(false, completion: nil)
        
     }
     
@@ -131,14 +131,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     // move view up when keyboard show
     func keyboardWillShow(notification: NSNotification){
         if bottomTextField.editing {
-            self.view.frame.origin.y = getKeyboardHeight(notification) * -1
+            view.frame.origin.y = getKeyboardHeight(notification) * -1
         }
     }
     
     //Move view down when keyboad hide
     func keyboardWillHide(notification: NSNotification){
         if (bottomTextField.resignFirstResponder()) {
-            self.view.frame.origin.y = 0
+            view.frame.origin.y = 0
         }
     }
     
