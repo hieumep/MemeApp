@@ -20,6 +20,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     
     var fontStyle = FontStyle()
     let newTextFields = textFields()
+    var appVar = UIApplication.sharedApplication().delegate as! AppDelegate
     
     
     override func viewDidLoad() {
@@ -83,7 +84,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
             activityVC.excludedActivityTypes = excludeActivities
             activityVC.completionWithItemsHandler = { activity, completed, items, error in
                 if completed {
-                    self.saveMeme()
+                    self.appVar.memes.append(self.saveMeme())
                     self.dismissViewControllerAnimated(true, completion: nil)
                 }
             }

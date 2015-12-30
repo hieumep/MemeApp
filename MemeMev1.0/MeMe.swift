@@ -6,10 +6,12 @@
 //  Copyright © 2015 Hieu Vo. All rights reserved.
 //
 
+
 import Foundation
+
 import UIKit
 
-struct Meme {
+class Meme {
     var topText = String()
     var bottomText = String()
     var image = UIImage()
