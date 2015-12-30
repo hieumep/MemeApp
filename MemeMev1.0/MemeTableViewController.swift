@@ -29,6 +29,7 @@ class MemeTableViewController : UITableViewController{
         cell.memeBottomLable.text = meme.bottomText
         return cell
     }
+    
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
     }

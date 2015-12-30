@@ -21,6 +21,8 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     var fontStyle = FontStyle()
     let newTextFields = textFields()
     var appVar = UIApplication.sharedApplication().delegate as! AppDelegate
+    var indexMeme : Int?
+    var memeEdit: Meme?
     
     
     override func viewDidLoad() {
@@ -28,8 +30,20 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         // set 2 textFields
         setTextAttributes(topTextField,text: "TOP")
         setTextAttributes(bottomTextField,text: "BOTTOM")
+        
+        //check Edit mode?
+        if let index = indexMeme {
+            setUpImageToEdit(index)
         }
+    }
 
+    //Set up for Edit Mode
+    func setUpImageToEdit(index : Int){
+        memeEdit = appVar.memes[index]
+        imageView.image = memeEdit?.image
+        topTextField.text = memeEdit?.topText
+        bottomTextField.text = memeEdit?.bottomText
+    }
     func setTextAttributes(textField : UITextField, text : String) {
         let TextAttributes = [
             NSStrokeColorAttributeName : fontStyle.strokeColor,
@@ -84,7 +98,12 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
             activityVC.excludedActivityTypes = excludeActivities
             activityVC.completionWithItemsHandler = { activity, completed, items, error in
                 if completed {
+                    //if edit Mode to edit Meme, else to create new
+                    if let index = self.indexMeme {
+                        self.appVar.memes[index] = self.saveMeme()
+                    }else{
                     self.appVar.memes.append(self.saveMeme())
+                    }
                     self.dismissViewControllerAnimated(true, completion: nil)
                 }
             }
@@ -94,9 +113,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     
     
     @IBAction func Cancel() {
-        imageView.image = nil
-        topTextField.text = "TOP"
-        bottomTextField.text = "BOTTOM"
+       dismissViewControllerAnimated(true, completion: nil)
     }
 
     // func for imagePickerCotroller delegate , set Image view after pick
