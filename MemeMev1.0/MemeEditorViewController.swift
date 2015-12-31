@@ -1,6 +1,6 @@
 //
 //  MemeEditorViewController.swift
-//  TestLayoutBeta1
+//  MemeMeV1.0
 //
 //  Created by Hieu Vo on 12/17/15.
 //  Copyright © 2015 Hieu Vo. All rights reserved.

@@ -20,6 +20,7 @@ class MemeDetailViewController : UIViewController {
         swipeFunction()
         getMeme(indexMeme)
     }
+    
     //Add swipe function
     func swipeFunction(){
         let swipeLeftChange = UISwipeGestureRecognizer(target: self, action: Selector("changeMeme:"))

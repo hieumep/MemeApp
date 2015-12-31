@@ -24,8 +24,7 @@ class MemeCollectionViewController : UICollectionViewController{
         let dimensionheight = (sizeWidth > sizeHeight ? sizeWidth:sizeHeight - (2 * space)) / 5.0
         
         flowLayout.minimumInteritemSpacing = space
-       flowLayout.itemSize = CGSizeMake(dimensionWidth, dimensionheight)
-        //flowLayout.itemSize = CGSize(width: 90, height: 90)
+        flowLayout.itemSize = CGSizeMake(dimensionWidth, dimensionheight)
     }
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
