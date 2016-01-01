@@ -13,10 +13,12 @@ class MemeDetailViewController : UIViewController {
     let appVar = UIApplication.sharedApplication().delegate as! AppDelegate
     
     @IBOutlet weak var memeImage: UIImageView!
+    
     override func viewDidAppear(animated: Bool){
         self.tabBarController?.tabBar.hidden = true
         let editButton = UIBarButtonItem(barButtonSystemItem: .Edit, target: self, action: Selector("editMeme:"))
         self.navigationItem.rightBarButtonItem = editButton
+        memeImage.contentMode = .ScaleAspectFit
         swipeFunction()
         getMeme(indexMeme)
     }

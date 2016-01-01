@@ -15,6 +15,7 @@ class MemeTableViewController : UITableViewController{
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(true)
         tableView.reloadData()
+        tabBarController?.tabBar.hidden = false
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

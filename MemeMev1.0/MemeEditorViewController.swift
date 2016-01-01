@@ -78,7 +78,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
     let imagePicker = UIImagePickerController()
         imagePicker.delegate = self
         imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary
-        self.presentViewController(imagePicker, animated: true, completion: nil)
+        presentViewController(imagePicker, animated: true, completion: nil)
     }
     
     //Pick image from Camera
@@ -86,7 +86,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         let imagePicker = UIImagePickerController()
         imagePicker.sourceType = .Camera
         imagePicker.delegate = self
-        self.presentViewController(imagePicker, animated: true, completion: nil)
+        presentViewController(imagePicker, animated: true, completion: nil)
     }
     
     // Function for share Button
@@ -102,12 +102,12 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
                     if let index = self.indexMeme {
                         self.appVar.memes[index] = self.saveMeme()
                     }else{
-                    self.appVar.memes.append(self.saveMeme())
+                        self.appVar.memes.append(self.saveMeme())
                     }
-                    self.dismissViewControllerAnimated(true, completion: nil)
+                        self.dismissViewControllerAnimated(true, completion: nil)
                 }
             }
-            self.presentViewController(activityVC, animated: true, completion: nil)
+            presentViewController(activityVC, animated: true, completion: nil)
         }
     }
     
@@ -174,8 +174,7 @@ class MemeEditorViewController: UIViewController, UIImagePickerControllerDelegat
         
         // Render view to an image
         UIGraphicsBeginImageContext(self.view.frame.size)
-        self.view.drawViewHierarchyInRect(self.view.frame,
-            afterScreenUpdates: true)
+        view.drawViewHierarchyInRect(self.view.frame, afterScreenUpdates: true)
         let memedImage : UIImage =
         UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()

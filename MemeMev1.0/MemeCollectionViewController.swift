@@ -15,7 +15,7 @@ class MemeCollectionViewController : UICollectionViewController{
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
     
     override func viewDidAppear(animated: Bool) {
-        
+        tabBarController?.tabBar.hidden = false
         collectionView?.reloadData()
         let space: CGFloat = 3.0
         let sizeHeight = view.frame.size.height
